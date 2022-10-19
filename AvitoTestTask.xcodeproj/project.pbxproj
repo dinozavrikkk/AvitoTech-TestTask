@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8407D3BF2900A53600D618BC /* UserDefaultErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407D3BE2900A53600D618BC /* UserDefaultErrorHandler.swift */; };
 		844BEBE228FDF08A000A94FA /* EmployeeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BEBE128FDF08A000A94FA /* EmployeeListView.swift */; };
 		844BEBE428FDF8CC000A94FA /* CellForAnEmployee.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BEBE328FDF8CC000A94FA /* CellForAnEmployee.swift */; };
 		844BEBE828FE0934000A94FA /* UIView + extension .swift in Sources */ = {isa = PBXBuildFile; fileRef = 844BEBE728FE0934000A94FA /* UIView + extension .swift */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8407D3BE2900A53600D618BC /* UserDefaultErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultErrorHandler.swift; sourceTree = "<group>"; };
 		844BEBE128FDF08A000A94FA /* EmployeeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListView.swift; sourceTree = "<group>"; };
 		844BEBE328FDF8CC000A94FA /* CellForAnEmployee.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellForAnEmployee.swift; sourceTree = "<group>"; };
 		844BEBE728FE0934000A94FA /* UIView + extension .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView + extension .swift"; sourceTree = "<group>"; };
@@ -89,6 +91,7 @@
 			children = (
 				84D35DAC28FF33EE00937EAF /* URLStrings.swift */,
 				84D35DAE28FF423600937EAF /* KeyForUserDefault.swift */,
+				8407D3BE2900A53600D618BC /* UserDefaultErrorHandler.swift */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 				84D35DB128FF498300937EAF /* UserDefaults + extension.swift in Sources */,
 				844D90AD28FEC4AC00A47255 /* EmployeeDataProviderProtocol.swift in Sources */,
 				844BEBE228FDF08A000A94FA /* EmployeeListView.swift in Sources */,
+				8407D3BF2900A53600D618BC /* UserDefaultErrorHandler.swift in Sources */,
 				844BEBE828FE0934000A94FA /* UIView + extension .swift in Sources */,
 				844BEBF128FE22F0000A94FA /* EmployeeDataProvider.swift in Sources */,
 				84F2270228FDE821007B2CC5 /* SceneDelegate.swift in Sources */,

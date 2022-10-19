@@ -8,12 +8,15 @@
 import Foundation
 
 enum KeyForUserDefault {
-    case savedDateString
+    case savedDate
+    case savedCodableObject
     
-    var savedString: String {
+    var string: String {
         switch self {
-        case .savedDateString:
+        case .savedDate:
             return "SavedDate"
+        case .savedCodableObject:
+            return "SavedCodableObject"
         }
     }
 }
