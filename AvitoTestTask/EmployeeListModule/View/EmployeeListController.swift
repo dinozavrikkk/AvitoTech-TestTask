@@ -49,6 +49,12 @@ extension EmployeeListController: EmployeeListControllerProtocol {
     func fetchModel() {
         mainView.listOfEmployeesTableView.reloadData()
     }
+    
+    func showAlert() {
+        Alerts.getAlertNoInternetConnection(self,
+                                            title: AlertsTitleText.noInternetConnection.title,
+                                            message: AlertsMessageText.noInternetConnection.message)
+    }
 }
 
 //MARK: CustomizeTableView

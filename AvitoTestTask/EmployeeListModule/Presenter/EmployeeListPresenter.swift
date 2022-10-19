@@ -24,8 +24,13 @@ final class EmployeeListPresenter {
 
 extension EmployeeListPresenter: EmployeePresenterProtocol {
     func viewIsReady() {
-        employeeDataProvider.getData { [weak self] _ in
-            self?.employeeViewController?.fetchModel()
+        employeeDataProvider.getData { [weak self] result in
+            switch result {
+            case .success(_):
+                self?.employeeViewController?.fetchModel()
+            case .failure(_):
+                self?.employeeViewController?.showAlert()
+            }
         }
     }
     

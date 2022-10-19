@@ -27,7 +27,7 @@ extension EmployeeDataProvider: EmployeeDataProviderProtocol {
                 if let data = data,
                    let company = try? JSONDecoder().decode(EmployeeListModel.self, from: data) {
                     
-                    let hour: TimeInterval = 30
+                    let hour: TimeInterval = 60
                     let date = Date.now.addingTimeInterval(hour)
                     self.userDefault.set(date: date, forKey: KeyForUserDefault.savedDate.string)
                     
@@ -40,8 +40,7 @@ extension EmployeeDataProvider: EmployeeDataProviderProtocol {
                     DispatchQueue.main.async {
                         completion(.success(self.employeeDataStorage.transmittingEmployeeListArray))
                     }
-                }
-                else {
+                } else {
                     guard let error = error else { return }
                     DispatchQueue.main.async {
                         completion(.failure(error))

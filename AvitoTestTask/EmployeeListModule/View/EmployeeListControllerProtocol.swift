@@ -10,4 +10,5 @@ import UIKit
 
 protocol EmployeeListControllerProtocol: UIViewController {
     func fetchModel()
+    func showAlert()
 }
