@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8407D3BF2900A53600D618BC /* UserDefaultErrorHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8407D3BE2900A53600D618BC /* UserDefaultErrorHandler.swift */; };
+		8418662929016B8A00DF6BD8 /* DataDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418662829016B8A00DF6BD8 /* DataDecoder.swift */; };
+		8418662B29017D5F00DF6BD8 /* UserDefaultsConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8418662A29017D5F00DF6BD8 /* UserDefaultsConfig.swift */; };
 		8432205D2900B0F800275F79 /* Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8432205C2900B0F800275F79 /* Alerts.swift */; };
 		8432205F2900B67E00275F79 /* AlertsMessageText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8432205E2900B67E00275F79 /* AlertsMessageText.swift */; };
 		843220622900B7F200275F79 /* AlertsTitleText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 843220612900B7F200275F79 /* AlertsTitleText.swift */; };
@@ -22,9 +23,8 @@
 		844D90AB28FEC3EA00A47255 /* EmployeeListControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D90AA28FEC3EA00A47255 /* EmployeeListControllerProtocol.swift */; };
 		844D90AD28FEC4AC00A47255 /* EmployeeDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D90AC28FEC4AC00A47255 /* EmployeeDataProviderProtocol.swift */; };
 		844D90AF28FEC4BE00A47255 /* EmployeeDataStorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D90AE28FEC4BE00A47255 /* EmployeeDataStorageProtocol.swift */; };
+		84C000AB2900C2FE003A8E6E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C000AA2900C2FE003A8E6E /* NetworkService.swift */; };
 		84D35DAD28FF33EE00937EAF /* URLStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D35DAC28FF33EE00937EAF /* URLStrings.swift */; };
-		84D35DAF28FF423600937EAF /* KeyForUserDefault.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D35DAE28FF423600937EAF /* KeyForUserDefault.swift */; };
-		84D35DB128FF498300937EAF /* UserDefaults + extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D35DB028FF498300937EAF /* UserDefaults + extension.swift */; };
 		84F2270028FDE821007B2CC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F226FF28FDE821007B2CC5 /* AppDelegate.swift */; };
 		84F2270228FDE821007B2CC5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F2270128FDE821007B2CC5 /* SceneDelegate.swift */; };
 		84F2270928FDE823007B2CC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 84F2270828FDE823007B2CC5 /* Assets.xcassets */; };
@@ -34,7 +34,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8407D3BE2900A53600D618BC /* UserDefaultErrorHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultErrorHandler.swift; sourceTree = "<group>"; };
+		8418662829016B8A00DF6BD8 /* DataDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDecoder.swift; sourceTree = "<group>"; };
+		8418662A29017D5F00DF6BD8 /* UserDefaultsConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsConfig.swift; sourceTree = "<group>"; };
 		8432205C2900B0F800275F79 /* Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alerts.swift; sourceTree = "<group>"; };
 		8432205E2900B67E00275F79 /* AlertsMessageText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsMessageText.swift; sourceTree = "<group>"; };
 		843220612900B7F200275F79 /* AlertsTitleText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertsTitleText.swift; sourceTree = "<group>"; };
@@ -49,9 +50,8 @@
 		844D90AA28FEC3EA00A47255 /* EmployeeListControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListControllerProtocol.swift; sourceTree = "<group>"; };
 		844D90AC28FEC4AC00A47255 /* EmployeeDataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDataProviderProtocol.swift; sourceTree = "<group>"; };
 		844D90AE28FEC4BE00A47255 /* EmployeeDataStorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDataStorageProtocol.swift; sourceTree = "<group>"; };
+		84C000AA2900C2FE003A8E6E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		84D35DAC28FF33EE00937EAF /* URLStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLStrings.swift; sourceTree = "<group>"; };
-		84D35DAE28FF423600937EAF /* KeyForUserDefault.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyForUserDefault.swift; sourceTree = "<group>"; };
-		84D35DB028FF498300937EAF /* UserDefaults + extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults + extension.swift"; sourceTree = "<group>"; };
 		84F226FC28FDE821007B2CC5 /* AvitoTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvitoTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84F226FF28FDE821007B2CC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84F2270128FDE821007B2CC5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,8 +77,6 @@
 			isa = PBXGroup;
 			children = (
 				84D35DAC28FF33EE00937EAF /* URLStrings.swift */,
-				84D35DAE28FF423600937EAF /* KeyForUserDefault.swift */,
-				8407D3BE2900A53600D618BC /* UserDefaultErrorHandler.swift */,
 				8432205E2900B67E00275F79 /* AlertsMessageText.swift */,
 				843220612900B7F200275F79 /* AlertsTitleText.swift */,
 			);
@@ -89,7 +87,6 @@
 			isa = PBXGroup;
 			children = (
 				844BEBE728FE0934000A94FA /* UIView + extension .swift */,
-				84D35DB028FF498300937EAF /* UserDefaults + extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -104,11 +101,21 @@
 			path = EmployeeListModule;
 			sourceTree = "<group>";
 		};
+		84C000A92900C2DF003A8E6E /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				84C000AA2900C2FE003A8E6E /* NetworkService.swift */,
+				8418662829016B8A00DF6BD8 /* DataDecoder.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		84D35DAB28FF33D700937EAF /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
-				843220602900B68E00275F79 /* Enums */,
 				8432205C2900B0F800275F79 /* Alerts.swift */,
+				8418662A29017D5F00DF6BD8 /* UserDefaultsConfig.swift */,
+				843220602900B68E00275F79 /* Enums */,
 			);
 			path = Helpers;
 			sourceTree = "<group>";
@@ -136,6 +143,7 @@
 				84F2271828FDED22007B2CC5 /* Application */,
 				84D35DAB28FF33D700937EAF /* Helpers */,
 				844BEBE628FE0044000A94FA /* Extensions */,
+				84C000A92900C2DF003A8E6E /* Service */,
 				84F2271528FDEBF8007B2CC5 /* ModuleBuilder */,
 				844BEBEB28FE1360000A94FA /* EmployeeListModule */,
 			);
@@ -272,7 +280,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				844D90AB28FEC3EA00A47255 /* EmployeeListControllerProtocol.swift in Sources */,
-				84D35DAF28FF423600937EAF /* KeyForUserDefault.swift in Sources */,
 				84F2271728FDEC14007B2CC5 /* EmployeeListModuleBuilder.swift in Sources */,
 				8432205F2900B67E00275F79 /* AlertsMessageText.swift in Sources */,
 				843220622900B7F200275F79 /* AlertsTitleText.swift in Sources */,
@@ -282,14 +289,15 @@
 				8432205D2900B0F800275F79 /* Alerts.swift in Sources */,
 				844BEBEA28FE1328000A94FA /* EmployeeListPresenter.swift in Sources */,
 				844BEBEF28FE22D3000A94FA /* EmployeeListDataStorage.swift in Sources */,
+				8418662929016B8A00DF6BD8 /* DataDecoder.swift in Sources */,
+				8418662B29017D5F00DF6BD8 /* UserDefaultsConfig.swift in Sources */,
 				844D90A928FEC2E000A47255 /* EmployeePresenterProtocol.swift in Sources */,
 				844BEBED28FE1C24000A94FA /* EmployeeListModel.swift in Sources */,
 				844BEBE428FDF8CC000A94FA /* CellForAnEmployee.swift in Sources */,
 				84F2270028FDE821007B2CC5 /* AppDelegate.swift in Sources */,
-				84D35DB128FF498300937EAF /* UserDefaults + extension.swift in Sources */,
+				84C000AB2900C2FE003A8E6E /* NetworkService.swift in Sources */,
 				844D90AD28FEC4AC00A47255 /* EmployeeDataProviderProtocol.swift in Sources */,
 				844BEBE228FDF08A000A94FA /* EmployeeListView.swift in Sources */,
-				8407D3BF2900A53600D618BC /* UserDefaultErrorHandler.swift in Sources */,
 				844BEBE828FE0934000A94FA /* UIView + extension .swift in Sources */,
 				844BEBF128FE22F0000A94FA /* EmployeeDataProvider.swift in Sources */,
 				84F2270228FDE821007B2CC5 /* SceneDelegate.swift in Sources */,

@@ -27,7 +27,7 @@ final class EmployeeListController: UIViewController {
 //MARK: UITableViewDelegate, UITableViewDataSource
 extension EmployeeListController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        employeePresenter?.employeeListCount ?? 0
+        employeePresenter?.showTheNumberOfRows ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -35,7 +35,7 @@ extension EmployeeListController: UITableViewDelegate, UITableViewDataSource {
         else {
             return UITableViewCell()
         }
-        if let model = employeePresenter?.employee(for: indexPath) {
+        if let model = employeePresenter?.showTheEmployee(for: indexPath) {
             cell.updateCell(data: model)
         } else {
             print("Ячейки не заполнились")
@@ -46,7 +46,7 @@ extension EmployeeListController: UITableViewDelegate, UITableViewDataSource {
 
 //MARK: EmployeeListControllerProtocol
 extension EmployeeListController: EmployeeListControllerProtocol {
-    func fetchModel() {
+    func updateTableView() {
         mainView.listOfEmployeesTableView.reloadData()
     }
     

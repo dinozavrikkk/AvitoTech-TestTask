@@ -8,5 +8,5 @@
 import Foundation
 
 protocol EmployeeDataProviderProtocol: AnyObject {
-    func getData(completion: @escaping (Result<[Employee], Error>) -> Void)
+    func getData(cacheEmployeeListModel: EmployeeListModel?, completion: @escaping (Result<EmployeeListModel, Error>) -> Void)
 }
