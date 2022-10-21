@@ -31,7 +31,7 @@ extension EmployeeListPresenter: EmployeePresenterProtocol {
             employeeDataProvider.getData(cacheEmployeeListModel: nil) { [weak self] result in
                 switch result {
                 case .success(let model):
-                    let hour: TimeInterval = 60
+                    let hour: TimeInterval = 3600
                     let date = Date.now.addingTimeInterval(hour)
                     UserDefaultsConfig.defaults.timeTracker = date
                     UserDefaultsConfig.defaults.cacheEmployee = model

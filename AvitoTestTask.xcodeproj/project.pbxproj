@@ -23,6 +23,7 @@
 		844D90AB28FEC3EA00A47255 /* EmployeeListControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D90AA28FEC3EA00A47255 /* EmployeeListControllerProtocol.swift */; };
 		844D90AD28FEC4AC00A47255 /* EmployeeDataProviderProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D90AC28FEC4AC00A47255 /* EmployeeDataProviderProtocol.swift */; };
 		844D90AF28FEC4BE00A47255 /* EmployeeDataStorageProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844D90AE28FEC4BE00A47255 /* EmployeeDataStorageProtocol.swift */; };
+		846285F12901E5550037FAD7 /* EmployeeListPresenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846285F02901E5550037FAD7 /* EmployeeListPresenterTests.swift */; };
 		84C000AB2900C2FE003A8E6E /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C000AA2900C2FE003A8E6E /* NetworkService.swift */; };
 		84D35DAD28FF33EE00937EAF /* URLStrings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84D35DAC28FF33EE00937EAF /* URLStrings.swift */; };
 		84F2270028FDE821007B2CC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F226FF28FDE821007B2CC5 /* AppDelegate.swift */; };
@@ -32,6 +33,16 @@
 		84F2271428FDEB4E007B2CC5 /* EmployeeListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F2271328FDEB4E007B2CC5 /* EmployeeListController.swift */; };
 		84F2271728FDEC14007B2CC5 /* EmployeeListModuleBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84F2271628FDEC14007B2CC5 /* EmployeeListModuleBuilder.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		846285F22901E5550037FAD7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 84F226F428FDE821007B2CC5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 84F226FB28FDE821007B2CC5;
+			remoteInfo = AvitoTestTask;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		8418662829016B8A00DF6BD8 /* DataDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataDecoder.swift; sourceTree = "<group>"; };
@@ -50,6 +61,8 @@
 		844D90AA28FEC3EA00A47255 /* EmployeeListControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListControllerProtocol.swift; sourceTree = "<group>"; };
 		844D90AC28FEC4AC00A47255 /* EmployeeDataProviderProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDataProviderProtocol.swift; sourceTree = "<group>"; };
 		844D90AE28FEC4BE00A47255 /* EmployeeDataStorageProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeDataStorageProtocol.swift; sourceTree = "<group>"; };
+		846285EE2901E5550037FAD7 /* AvitoTestTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AvitoTestTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		846285F02901E5550037FAD7 /* EmployeeListPresenterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmployeeListPresenterTests.swift; sourceTree = "<group>"; };
 		84C000AA2900C2FE003A8E6E /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		84D35DAC28FF33EE00937EAF /* URLStrings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLStrings.swift; sourceTree = "<group>"; };
 		84F226FC28FDE821007B2CC5 /* AvitoTestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AvitoTestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,6 +76,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		846285EB2901E5550037FAD7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84F226F928FDE821007B2CC5 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -101,6 +121,14 @@
 			path = EmployeeListModule;
 			sourceTree = "<group>";
 		};
+		846285EF2901E5550037FAD7 /* AvitoTestTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				846285F02901E5550037FAD7 /* EmployeeListPresenterTests.swift */,
+			);
+			path = AvitoTestTaskTests;
+			sourceTree = "<group>";
+		};
 		84C000A92900C2DF003A8E6E /* Service */ = {
 			isa = PBXGroup;
 			children = (
@@ -124,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				84F226FE28FDE821007B2CC5 /* AvitoTestTask */,
+				846285EF2901E5550037FAD7 /* AvitoTestTaskTests */,
 				84F226FD28FDE821007B2CC5 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -132,6 +161,7 @@
 			isa = PBXGroup;
 			children = (
 				84F226FC28FDE821007B2CC5 /* AvitoTestTask.app */,
+				846285EE2901E5550037FAD7 /* AvitoTestTaskTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -212,6 +242,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		846285ED2901E5550037FAD7 /* AvitoTestTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 846285F62901E5550037FAD7 /* Build configuration list for PBXNativeTarget "AvitoTestTaskTests" */;
+			buildPhases = (
+				846285EA2901E5550037FAD7 /* Sources */,
+				846285EB2901E5550037FAD7 /* Frameworks */,
+				846285EC2901E5550037FAD7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				846285F32901E5550037FAD7 /* PBXTargetDependency */,
+			);
+			name = AvitoTestTaskTests;
+			productName = AvitoTestTaskTests;
+			productReference = 846285EE2901E5550037FAD7 /* AvitoTestTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		84F226FB28FDE821007B2CC5 /* AvitoTestTask */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 84F2271028FDE823007B2CC5 /* Build configuration list for PBXNativeTarget "AvitoTestTask" */;
@@ -239,6 +287,10 @@
 				LastSwiftUpdateCheck = 1330;
 				LastUpgradeCheck = 1330;
 				TargetAttributes = {
+					846285ED2901E5550037FAD7 = {
+						CreatedOnToolsVersion = 13.3;
+						TestTargetID = 84F226FB28FDE821007B2CC5;
+					};
 					84F226FB28FDE821007B2CC5 = {
 						CreatedOnToolsVersion = 13.3;
 					};
@@ -258,11 +310,19 @@
 			projectRoot = "";
 			targets = (
 				84F226FB28FDE821007B2CC5 /* AvitoTestTask */,
+				846285ED2901E5550037FAD7 /* AvitoTestTaskTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		846285EC2901E5550037FAD7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84F226FA28FDE821007B2CC5 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -275,6 +335,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		846285EA2901E5550037FAD7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				846285F12901E5550037FAD7 /* EmployeeListPresenterTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		84F226F828FDE821007B2CC5 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -306,6 +374,14 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		846285F32901E5550037FAD7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 84F226FB28FDE821007B2CC5 /* AvitoTestTask */;
+			targetProxy = 846285F22901E5550037FAD7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin PBXVariantGroup section */
 		84F2270A28FDE823007B2CC5 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
@@ -318,6 +394,42 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		846285F42901E5550037FAD7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8248857XZ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ayaz.AvitoTestTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AvitoTestTask.app/AvitoTestTask";
+			};
+			name = Debug;
+		};
+		846285F52901E5550037FAD7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8248857XZ3;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.Ayaz.AvitoTestTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AvitoTestTask.app/AvitoTestTask";
+			};
+			name = Release;
+		};
 		84F2270E28FDE823007B2CC5 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -489,6 +601,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		846285F62901E5550037FAD7 /* Build configuration list for PBXNativeTarget "AvitoTestTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				846285F42901E5550037FAD7 /* Debug */,
+				846285F52901E5550037FAD7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		84F226F728FDE821007B2CC5 /* Build configuration list for PBXProject "AvitoTestTask" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
