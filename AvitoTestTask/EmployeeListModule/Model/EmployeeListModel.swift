@@ -7,16 +7,16 @@
 
 import Foundation
 
-struct EmployeeListModel: Codable {
+struct EmployeeListModel: Codable, Equatable {
     let company: Company
 }
 
-struct Company: Codable {
+struct Company: Codable, Equatable {
     let name: String
     let employees: [Employee]
 }
 
-struct Employee: Codable {
+struct Employee: Codable, Equatable {
     let name, phoneNumber: String
     let skills: [String]
 

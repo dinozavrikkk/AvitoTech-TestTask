@@ -9,5 +9,6 @@ import Foundation
 import UIKit
 
 protocol EmployeeListControllerProtocol: UIViewController {
-    func fetchModel()
+    func updateTableView()
+    func showAlert()
 }

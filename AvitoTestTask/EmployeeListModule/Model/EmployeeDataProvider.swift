@@ -8,35 +8,23 @@
 import Foundation
 
 final class EmployeeDataProvider {
-    private let networkDataFetcher = NetworkDataFetcher()
-    private let employeeDataStorage: EmployeeDataStorageProtocol
+    private let networkService: NetworkServiceProtocol
     
-    init(employeeDataStorage: EmployeeDataStorageProtocol) {
-        self.employeeDataStorage = employeeDataStorage
+    init(networkService: NetworkServiceProtocol) {
+        self.networkService = networkService
     }
 }
 
 extension EmployeeDataProvider: EmployeeDataProviderProtocol {
     
-    func getData(completion: @escaping (Result<[Employee], Error>) -> Void) {
-        guard let url = URL(string: URLStrings.employeeListURL.url) else { return }
-        let request = URLRequest(url: url)
-        let task = URLSession.shared.dataTask(with: request) { data, _, error in
-            if let data = data,
-               let company = try? JSONDecoder().decode(EmployeeListModel.self, from: data) {
-                DispatchQueue.main.async {
-                    self.employeeDataStorage.fillingEmployeeListWithData(data: company)
-                    completion(.success(self.employeeDataStorage.transmittingEmployeeListArray))
-                }
-            }
-            else {
-                guard let error = error else { return }
-                DispatchQueue.main.async {
-                    completion(.failure(error))
-                }
-            }
+    func getData(cacheEmployeeListModel cacheEmployee: EmployeeListModel?, completion: @escaping (Result<EmployeeListModel, Error>) -> Void) {
+        guard let cacheEmployee = cacheEmployee else {
+            networkService.request(urlString: URLStrings.employeeListURL.url, completion: completion)
+            return
         }
-        task.resume()
+        DispatchQueue.main.async {
+            completion(.success(cacheEmployee))
+        }
     }
 }
 

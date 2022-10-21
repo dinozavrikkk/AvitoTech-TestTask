@@ -8,8 +8,6 @@
 import Foundation
 
 protocol EmployeeDataStorageProtocol: AnyObject {
-    var transmittingEmployeeListArray: [Employee] { get }
-    var numberOfRowsInSection: Int { get }
-    func fillingEmployeeListWithData(data: EmployeeListModel)
-    func getEmployee(for indexPath: IndexPath) -> Employee
+    func numberOfRowsInSection(employeeListModel: EmployeeListModel) -> Int
+    func getEmployee(employeeListModel: EmployeeListModel, for indexPath: IndexPath) -> Employee
 }

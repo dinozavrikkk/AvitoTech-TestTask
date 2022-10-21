@@ -11,7 +11,9 @@ import UIKit
 enum EmployeeListModuleBuilder {
     static func assemblyMainController() -> UIViewController {
         let employeeListDataStorage = EmployeeListDataStorage()
-        let employeeListDataProvider = EmployeeDataProvider(employeeDataStorage: employeeListDataStorage)
+        let dataDecoder = DataDecoder()
+        let networkService = NetworkService(dataDecoder: dataDecoder)
+        let employeeListDataProvider = EmployeeDataProvider(networkService: networkService)
         let employeeListVC = EmployeeListController()
         let employeeListPresenter = EmployeeListPresenter(employeeDataProvider: employeeListDataProvider,
                                                           employeeDataStorage: employeeListDataStorage,

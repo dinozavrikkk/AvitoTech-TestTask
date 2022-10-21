@@ -13,23 +13,23 @@ final class CellForAnEmployee: UITableViewCell {
     private let employeesNameLabel: UILabel = {
         let nameLabel = UILabel()
         nameLabel.textColor = .white
-        nameLabel.font = .boldSystemFont(ofSize: 18)
+        nameLabel.font = .boldSystemFont(ofSize: 22)
         nameLabel.translatesAutoresizingMaskIntoConstraints = false
         return nameLabel
     }()
     
     private let employeesPhoneNumberLabel: UILabel = {
         let phoneNumberLabel = UILabel()
-        phoneNumberLabel.textColor = .white
-        phoneNumberLabel.font = .boldSystemFont(ofSize: 15)
+        phoneNumberLabel.textColor = .systemGray4
+        phoneNumberLabel.font = .boldSystemFont(ofSize: 17)
         phoneNumberLabel.translatesAutoresizingMaskIntoConstraints = false
         return phoneNumberLabel
     }()
     
     private let employeesSkillsLabel: UILabel = {
         let skillsLabel = UILabel()
-        skillsLabel.textColor = .white
-        skillsLabel.font = .boldSystemFont(ofSize: 15)
+        skillsLabel.textColor = .systemGray4
+        skillsLabel.font = .boldSystemFont(ofSize: 17)
         skillsLabel.numberOfLines = 0
         skillsLabel.translatesAutoresizingMaskIntoConstraints = false
         return skillsLabel
@@ -38,11 +38,18 @@ final class CellForAnEmployee: UITableViewCell {
     private let employeesPhotoImageView: UIImageView = {
         let photoImageView = UIImageView()
         photoImageView.contentMode = .scaleToFill
-        photoImageView.layer.cornerRadius = 60
+        photoImageView.layer.cornerRadius = 50
         photoImageView.clipsToBounds = true
         photoImageView.image = UIImage(named: "avatar")
         photoImageView.translatesAutoresizingMaskIntoConstraints = false
         return photoImageView
+    }()
+    
+    private let lineView: UIView = {
+       let line = UIView()
+        line.backgroundColor = .systemGray4
+        line.translatesAutoresizingMaskIntoConstraints = false
+        return line
     }()
     
     private lazy var verticalStack: UIStackView = {
@@ -68,7 +75,7 @@ final class CellForAnEmployee: UITableViewCell {
     }
     
     private func addSubviews() {
-        [employeesPhotoImageView, verticalStack].forEach { subview in contentView.addSubview(subview) }
+        [employeesPhotoImageView, verticalStack, lineView].forEach { subview in contentView.addSubview(subview) }
     }
     
     private func setupConstraints() {
@@ -76,14 +83,19 @@ final class CellForAnEmployee: UITableViewCell {
             employeesPhotoImageView.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
             employeesPhotoImageView.leadingAnchor.constraint(equalTo: contentView.leadingAnchor, constant: 8),
             employeesPhotoImageView.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8),
-            employeesPhotoImageView.heightAnchor.constraint(equalToConstant: 120),
-            employeesPhotoImageView.widthAnchor.constraint(equalToConstant: 120),
+            employeesPhotoImageView.heightAnchor.constraint(equalToConstant: 100),
+            employeesPhotoImageView.widthAnchor.constraint(equalToConstant: 100),
             
             verticalStack.topAnchor.constraint(equalTo: contentView.topAnchor, constant: 8),
             verticalStack.leadingAnchor.constraint(equalTo: employeesPhotoImageView.trailingAnchor, constant: 8),
             verticalStack.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8),
             verticalStack.bottomAnchor.constraint(equalTo: contentView.bottomAnchor, constant: -8),
-            verticalStack.heightAnchor.constraint(equalToConstant: 120)
+            verticalStack.heightAnchor.constraint(equalToConstant: 100),
+            
+            lineView.topAnchor.constraint(equalTo: verticalStack.bottomAnchor, constant: 4),
+            lineView.leadingAnchor.constraint(equalTo: employeesPhotoImageView.trailingAnchor, constant: 8),
+            lineView.trailingAnchor.constraint(equalTo: contentView.trailingAnchor, constant: -8),
+            lineView.heightAnchor.constraint(equalToConstant: 1)
         ])
     }
     
